@@ -1,0 +1,54 @@
+<div class="incident-page">
+    <header>
+
+        <div class=" logo ">
+            <img src="assets/logo.png " alt="Logo de TaskBuddy ">
+        </div>
+
+        <nav>
+
+            <a (click)=" confirmarCerrarSesion() ">CERRAR SESIÓN</a>
+        </nav>
+    </header>
+    <div>
+        <div class="incident-container ">
+            <div class="titulo-container ">
+                <h1>Historial de Incidencias:</h1>
+            </div>
+
+            <div class="grid-container ">
+                <div class="image-container ">
+                    <img src="assets/BuddyHistory.jpg " alt="Imagen de Buddy " class="buddy-image ">
+                </div>
+                <div class="buscar-incidencia ">
+                    <!-- Agrega un campo de búsqueda -->
+                    <input type="text " placeholder="¡Aquí podrás buscar las incidencias! " [(ngModel)]="filtro">
+                </div>
+
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Nombre de la Incidencia</th>
+                            <th>Descripción</th>
+                            <th>Fecha de Inicio</th>
+                            <th>Nivel</th>
+                            <th>Estado</th>
+                            <th>Acciones</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr *ngFor="let incident of filtrarIncidencias() ">
+                            <td>{{ incident.name }}</td>
+                            <td>{{ incident.description }}</td>
+                            <td>{{ incident.dueDate }}</td>
+                            <td>{{ incident.status }}</td>
+                            <td>{{ incident.level }}</td>
+                            <td>
+                                <button (click)="verIncidencia(incident) ">Ver</button>
+
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>

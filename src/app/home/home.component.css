@@ -1,0 +1,81 @@
+ .app-header {
+     background-color: #FFF0B9;
+     padding: 10px;
+     text-align: center;
+     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+     height: 50px;
+ }
+ 
+ .app-header img {
+     width: 200px;
+ }
+ 
+ .page-container {
+     display: flex;
+     flex-direction: column;
+     justify-content: flex-end;
+     align-items: center;
+     height: 100vh;
+     background-color: #FFF0B9;
+ }
+ 
+ .header-container {
+     position: relative;
+     top: -40px;
+ }
+ 
+ .header-container img {
+     width: 100%;
+ }
+ 
+ .content-container {
+     position: absolute;
+     bottom: 10%;
+     left: 50%;
+     transform: translate(-50%, -50%);
+     background-color: #FFF;
+     padding: 20px;
+     border: 2px solid #000000;
+     border-radius: 10px;
+     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+     text-align: center;
+     color: #000000;
+ }
+ 
+ .image-container {
+     margin-top: 20px;
+     width: 100%;
+     height: 100%;
+ }
+ 
+ .bigger-image {
+     width: 150px;
+ }
+ 
+ .button-container {
+     display: flex;
+     flex-direction: row;
+     /* Cambio a fila para botones en línea */
+     align-items: center;
+     justify-content: center;
+     /* Alinear los botones al centro */
+     margin-top: 20px;
+ }
+ 
+ button {
+     background-color: #FFF0B9;
+     color: #0c0c0c;
+     padding: 10px 20px;
+     border: none;
+     border-radius: 5px;
+     cursor: pointer;
+     margin: 0 10px;
+     font-weight: bold;
+ }
+ 
+ button:hover {
+     background-color: #0c0c0c;
+     /* Cambia el fondo al pasar el mouse */
+     color: #FFF;
+     /* Cambia el color del texto al pasar el mouse */
+ }

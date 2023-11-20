@@ -1,0 +1,129 @@
+header {
+    background-color: rgba(255, 240, 185, 0.9);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+body {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    margin: 0;
+    padding: 0;
+}
+
+.incident-page {
+    background-color: rgba(255, 255, 255, 0.9);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    min-height: 100vh;
+}
+
+.logo img {
+    width: 230px;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+}
+
+nav a {
+    text-decoration: none;
+    color: #000000;
+    margin: 0 10px;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: #D2B48C;
+}
+
+.incident-container {
+    text-align: center;
+    width: 100%;
+    max-width: 800px;
+    margin: 20px auto;
+    /* Centra el contenedor */
+}
+
+.titulo-container {
+    margin-bottom: 20px;
+    background-color: #FFF0B9;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+h2 {
+    font-family: 'Arial', sans-serif;
+    color: #000000;
+    margin-top: 20px;
+}
+
+.buscar-incidencia {
+    width: 100%;
+    max-width: 400px;
+    margin-bottom: 20px;
+}
+
+.buscar-incidencia input {
+    padding: 10px;
+    border: 2px solid #000000;
+    border-radius: 5px;
+    width: 100%;
+}
+
+.buscar-incidencia::placeholder {
+    color: #808080;
+    font-style: italic;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+th,
+td {
+    border: 1px solid #000;
+    padding: 10px;
+}
+
+th {
+    background-color: #FFF0B9;
+}
+
+button {
+    background-color: #FFF0B9;
+    color: #000000;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+button:hover {
+    background-color: #000000;
+    color: #ffffff;
+}
+
+.buddy-image {
+    width: 150px;
+}
+
+.buscar-tarea {
+    width: 100%;
+    /* O ajusta un ancho máximo si lo deseas */
+    max-width: 400px;
+    /* O ajusta según tus preferencias */
+    margin-bottom: 20px;
+}

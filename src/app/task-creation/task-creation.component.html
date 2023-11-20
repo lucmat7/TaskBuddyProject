@@ -1,0 +1,59 @@
+<!-- task-creation.component.html -->
+
+<div class="taskCreation-page">
+    <header>
+
+        <div class="logo">
+            <img src="assets/logo.png" alt="Logo de TaskBuddy">
+        </div>
+
+        <nav>
+            <a routerLink="/taskHistory">HISTORIAL DE TAREAS</a>
+            <a (click)="confirmarCerrarSesion()">CERRAR SESIÓN</a>
+        </nav>
+    </header>
+
+    <body>
+        <div class="form-container">
+            <div class="login-form">
+                <h2>¡Vamos a crear una nueva tarea!</h2>
+                <form (ngSubmit)="onSubmit()">
+                    <div class="form-group">
+                        <div class="image-container">
+                            <img src="assets/BuddyTaskCreation.png" alt="Imagen de Buddy" class="bigger-image">
+                        </div>
+                        <label for="taskName">Nombre de la Tarea:</label>
+                        <input type="text" id="taskName" name="taskName" [(ngModel)]="taskName" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="taskDescription">Descripción de la Tarea:</label>
+                        <textarea id="taskDescription" name="taskDescription" [(ngModel)]="taskDescription" required></textarea>
+                    </div>
+                    <div class="form-group">
+                        <label for="dueDate">Fecha de Vencimiento:</label>
+                        <input type="date" id="dueDate" name="dueDate" [(ngModel)]="dueDate" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="taskCategory">Categoría de la Tarea:</label>
+                        <select id="taskCategory" name="taskCategory" [(ngModel)]="taskCategory" required>
+                            <option value="Educación">Educación</option>
+                            <option value="Laboral">Laboral</option>
+                            <option value="Hogar">Hogar</option>
+                            <option value="Personal">Personal</option>
+                        </select>
+                    </div>
+                    <!-- Nuevo campo para el estado de la tarea -->
+                    <div class="form-group">
+                        <label for="taskStatus">Estado de la Tarea:</label>
+                        <select id="taskStatus" name="taskStatus" [(ngModel)]="taskStatus" required="">
+                            <option value="En Curso">En Curso</option>
+                            <option value="Finalizada">Finalizada</option>
+                            <!-- Puedes agregar más estados según sea necesario -->
+                        </select>
+                    </div>
+                    <button type="submit">Guardar Tarea</button>
+                </form>
+            </div>
+        </div>
+    </body>
+</div>

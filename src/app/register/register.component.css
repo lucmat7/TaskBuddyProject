@@ -1,0 +1,111 @@
+/* CSS para la página de registro */
+
+.register-page {
+    background-color: #FFF0B9;
+    /* Color de fondo negro */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    min-height: 100vh;
+    /* Añade esta propiedad para asegurarte de que la página ocupe al menos 100% del viewport */
+    color: #FFF;
+    /* Color de texto blanco */
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 20px;
+}
+
+.logo img {
+    width: 230px;
+    margin-top: -40px;
+    /* Ajusta el tamaño del logo según sea necesario */
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    margin-top: -40px;
+    /* Ajusta el valor según tu preferencia */
+}
+
+nav a {
+    text-decoration: none;
+    color: #000000;
+    margin: 0 10px;
+    font-weight: bold;
+    transition: color 0.3s;
+    /* Agrega una transición suave de 0.3 segundos para el cambio de color */
+}
+
+nav a:hover {
+    color: #D2B48C;
+    /* Cambia el color cuando se pasa el cursor por encima */
+}
+
+.form-container {
+    background-color: #FFF;
+    /* Color de fondo del contenedor del formulario */
+    padding: 60px;
+    /* Aumenta el relleno para hacerlo más grande */
+    border: 2px solid #000;
+    /* Borde del contenedor del formulario */
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    color: #000;
+    /* Cambia el color de texto a negro */
+    width: 100%;
+    max-width: 400px;
+}
+
+.image-container {
+    text-align: center;
+}
+
+.small-image {
+    width: 150px;
+}
+
+.register-page h2 {
+    font-family: 'Arial', sans-serif;
+}
+
+.form-group {
+    margin: 10px 0;
+    text-align: left;
+}
+
+.form-group label {
+    display: block;
+    font-weight: bold;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 10px;
+    border: 2px solid #000;
+    border-radius: 5px;
+    margin-top: 5px;
+}
+
+button[type="submit"] {
+    background-color: #FFF0B9;
+    color: #000000;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px;
+    font-weight: bold;
+}
+
+button[type="submit"]:hover {
+    background-color: #000000;
+    color: white;
+}

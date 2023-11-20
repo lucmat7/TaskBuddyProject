@@ -1,0 +1,58 @@
+<div class="incidentCreation-page">
+
+    <header>
+
+        <div class="logo">
+            <img src="assets/logo.png" alt="Logo de TaskBuddy">
+        </div>
+
+        <nav>
+            <a routerLink="/taskHistory">HISTORIAL DE TAREAS</a>
+            <a (click)="confirmarCerrarSesion()">CERRAR SESIÓN</a>
+        </nav>
+    </header>
+
+
+    <body>
+        <div class="form-container">
+            <div class="login-form">
+                <h2>Escribe tu incidencia:</h2>
+                <form (ngSubmit)="onSubmit()">
+                    <div class="form-group">
+                        <div class="image-container">
+                            <img src="assets/buddyIncident.jpg" alt="Imagen de Buddy" class="bigger-image">
+                        </div>
+                        <label for="incidentName">Nombre de la Incidencia:</label>
+                        <input type="text" id="indicentName" name=" incidentName" [(ngModel)]="incidentName" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="incidentDescription">Descripción de la Incidencia:</label>
+                        <textarea id="incidentDescription" name="incidentDescription" [(ngModel)]="incidentDescription " required></textarea>
+                    </div>
+                    <div class="form-group ">
+                        <label for="dueDate ">Fecha de la Incidencia:</label>
+                        <input type="date" id="dueDate" name="dueDate" [(ngModel)]="dueDate" required>
+                    </div>
+                    <div class="form-group ">
+                        <label for="level">Nivel de la Incidencia:</label>
+                        <select id="level" name="level" [(ngModel)]="level" required>
+                            <option value="Baja">Baja</option>
+                            <option value="Moderada">Moderada</option>
+                            <option value="Grave">Grave</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="incidentStatus">Estado de la Incidencia:</label>
+                        <select id="incidentStatus" name="incidentStatus" [(ngModel)]="incidentStatus" required>
+                            <option value="Iniciada">Iniciada</option>
+                            <option value="Finalizada">Finalizada</option>
+                            
+                        </select>
+                    </div>
+                    <button type="submit">Guardar Incidencia</button>
+                </form>
+            </div>
+        </div>
+    </body>
+</div>

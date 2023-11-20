@@ -1,0 +1,56 @@
+<!-- task-history.component.html -->
+<header>
+
+    <div class="logo">
+        <img src="assets/logo.png" alt="Logo de TaskBuddy">
+    </div>
+
+    <nav>
+
+        <a routerLink="/taskCreation">CREACIÓN DE TAREAS</a>
+        <a routerLink="/incidentCreation">CREAR INCIDENCIA</a>
+        <a (click)="confirmarCerrarSesion()">CERRAR SESIÓN</a>
+    </nav>
+</header>
+<div>
+    <div class="historial-container">
+        <div class="titulo-container">
+            <h1>Historial de Tareas</h1>
+        </div>
+
+        <div class="grid-container">
+            <div class="image-container">
+                <img src="assets/BuddyHistory.jpg" alt="Imagen de Buddy" class="buddy-image">
+            </div>
+            <div class="buscar-tarea">
+                <!-- Agrega un campo de búsqueda -->
+                <input type="text" placeholder="¡Aquí podrás buscar tu tarea!" [(ngModel)]="filtro">
+            </div>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>Nombre de la Tarea</th>
+                        <th>Descripción</th>
+                        <th>Fecha de Vencimiento</th>
+                        <th>Estado</th>
+                        <th>Categoría</th>
+                        <th>Acciones</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr *ngFor="let tarea of filtrarTareas() ">
+                        <td>{{ tarea.name }}</td>
+                        <td>{{ tarea.description }}</td>
+                        <td>{{ tarea.dueDate }}</td>
+                        <td>{{ tarea.status }}</td>
+                        <!-- Ajusta para mostrar el estado -->
+                        <td>{{ tarea.category }}</td>
+                        <td>
+                            <button (click)="editarTarea(tarea) ">Editar</button>
+                            <button (click)="borrarTarea(tarea) ">Borrar</button>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>

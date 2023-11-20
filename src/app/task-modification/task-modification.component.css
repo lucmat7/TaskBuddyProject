@@ -1,0 +1,196 @@
+    body {
+        background: #FFF0B9;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+    }
+    
+    .taskModification {
+        background-color: rgba(255, 240, 185, 0.9);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 20px;
+        min-height: 100vh;
+    }
+    
+    header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        padding: 20px;
+        background-color: #FFF0B9;
+        color: #fff;
+    }
+    
+    .logo img {
+        width: 230px;
+        margin-top: -40px;
+    }
+    
+    nav {
+        display: flex;
+        align-items: center;
+        margin-top: -40px;
+    }
+    
+    nav a {
+        text-decoration: none;
+        color: #000000;
+        margin: 0 10px;
+        font-weight: bold;
+        transition: color 0.3s;
+    }
+    
+    nav a:hover {
+        color: #D2B48C;
+    }
+    
+    .task-modification-container {
+        background-color: rgba(252, 251, 250, 0.9);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 20px;
+        min-height: 100vh;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+    
+    h2 {
+        color: #333;
+        margin-bottom: 10px;
+    }
+    
+    .image-container {
+        margin-top: 20px;
+        width: 50%;
+    }
+    
+    .bigger-image {
+        width: 150px;
+    }
+    
+    .task-modification-container {
+        background-color: #ffffff;
+        padding: 20px;
+        border: 2px solid #000;
+        border-radius: 10px;
+        color: #000;
+        width: 100%;
+        max-width: 400px;
+    }
+    
+    .input-field {
+        width: calc(100% - 20px);
+        padding: 10px;
+        border: 2px solid #000000;
+        border-radius: 5px;
+        margin-top: 5px;
+    }
+    
+    button {
+        background-color: #FFF0B9;
+        color: #000000;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 5px;
+        margin-top: 20px;
+        font-weight: bold;
+    }
+    
+    button:hover {
+        background-color: #000000;
+        color: #ffffff;
+    }
+    
+    nav {
+        display: flex;
+        align-items: center;
+        margin-top: -40px;
+    }
+    
+    nav a {
+        text-decoration: none;
+        color: #000000;
+        margin: 0 10px;
+        font-weight: bold;
+        transition: color 0.3s;
+    }
+    
+    nav a:hover {
+        color: #D2B48C;
+    }
+    /* Estilos del formulario de modificación de tareas */
+    
+    .taskModification-page {
+        background-color: #FFF0B9;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+    }
+    
+    h2 {
+        color: #333;
+        margin-bottom: 10px;
+    }
+    
+    .image-container {
+        margin-top: 20px;
+    }
+    
+    .bigger-image {
+        width: 150px;
+        max-width: 100%;
+        height: auto;
+        display: block;
+        margin-bottom: 20px;
+    }
+    
+    .form-container {
+        background-color: #ffffff;
+        padding: 60px;
+        border: 2px solid #000;
+        border-radius: 10px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        color: #000;
+        width: 100%;
+        max-width: 400px;
+        margin-top: -50px;
+        display: flex;
+        padding: 20px;
+        min-height: 100vh;
+    }
+    
+    label {
+        margin-top: 10px;
+    }
+    
+    input,
+    textarea {
+        width: calc(100% - 20px);
+        padding: 10px;
+        border: 2px solid #000000;
+        border-radius: 5px;
+        margin-top: 5px;
+    }
+    
+    button {
+        background-color: #FFF0B9;
+        color: #000000;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        margin-top: 20px;
+        font-weight: bold;
+        text-align: center;
+    }
+    
+    .button-container {
+        text-align: center;
+    }

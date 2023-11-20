@@ -1,0 +1,44 @@
+<div class="taskModification">
+
+
+    <header>
+        <div class=" logo ">
+            <img src="assets/logo.png " alt="Logo de TaskBuddy ">
+        </div>
+        <nav>
+            <a routerLink="/taskHistory">HISTORIAL DE TAREAS</a>
+            <a routerLink="/taskCreation">CREACIÓN DE TAREAS</a>
+            <a (click)="confirmarCerrarSesion()">CERRAR SESIÓN</a>
+        </nav>
+    </header>
+    <div *ngIf="task " class="task-modification-container ">
+        <h2>¡Vamos a modificar las tareas!</h2>
+        <div class="image-container ">
+            <img src="assets/BuddyModification.jpg " alt="Imagen de Buddy " class="bigger-image ">
+        </div>
+
+        <div class="content">
+            <label for="name ">Nombre:</label>
+            <input id="name " class="input-field " [(ngModel)]="task.name " />
+
+            <label for="description ">Descripción:</label>
+            <textarea id="description " class="input-field " [(ngModel)]="task.description "></textarea>
+
+            <label for="dueDate ">Fecha de Vencimiento:</label>
+            <input id="dueDate " type="datetime " class="input-field " [(ngModel)]="task.dueDate " />
+
+            <label for="category ">Categoría:</label>
+            <input id="category " class="input-field " [(ngModel)]="task.category " />
+
+            <label for="status ">Estado:</label>
+            <select id="status " class="input-field " [(ngModel)]="task.status ">
+            <option value="En Curso ">En Curso</option>
+            <option value="Finalizada ">Finalizada</option>
+        </select>
+            <div class="button-container">
+                <button (click)="guardarCambios() ">Guardar Cambios</button>
+            </div>
+        </div>
+    </div>
+
+</div>
